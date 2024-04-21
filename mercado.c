@@ -175,6 +175,7 @@ int busca_nome(produto *prods){
     printf("Digite o nome do produto: ");
     scanf(" %15[^\n]", nome_prod);
 
+    //problema na leitura do nome do produto com fscanf, pois quando utilizo %15[^\n] ele lê apenas produtos que tenham 15 caracteres (conttando com espaçamento).
     while(fscanf(arquivo, "Produto: %15[^\n] \nSetor: %d \nQuantidade: %d \nPreço: R$%f\n =======================================\n",
    temp_produto.nome_produto, &temp_produto.setor_mercado,
    &temp_produto.qtd, &temp_produto.preco_por_unidade) != EOF) {
