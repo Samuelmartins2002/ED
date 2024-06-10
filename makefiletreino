@@ -1,0 +1,6 @@
+index:
+	gcc treino.c -c
+	gcc maintreino.c treino.o -o treino
+clear:
+	-rm treino.o
+	-rm treino
