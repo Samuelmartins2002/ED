@@ -1,0 +1,7 @@
+index:
+	gcc aluno.c -c
+	gcc mainprova.c aluno.o -o prova
+
+clear:
+	-rm aluno.o
+	-rm prova
